@@ -1,0 +1,95 @@
+/* custom style sheet for cory hardman coaching by jeremy hardman*/
+    body {
+        font-family: sanvito-pro, sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Redressed', cursive;
+    }
+
+    body,
+    html {
+        height: 100%;
+        color: #777;
+        line-height: 1.5;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 28px;
+    }
+    /* Top Nav */
+    div.w3-top{
+        color: #6200b3;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+        background-image: url("images/backgrounds/lavendar\ left\ side\ on\ wood.jpg");
+        min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+        background-image: url("images/backgrounds/wood\ grains\ white.jpg");
+        min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+        background-image: url("images/backgrounds/wood\ grains\ white.jpg");
+        min-height: 400px;
+    }
+
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+
+    .button-hover:hover {
+        color: white !important;
+        background-color: #6200b3 !important;
+    }
+
+    .button-hover-shadow:hover {
+        box-shadow: 0 12px 16px 0 black;
+    }
+
+    /* theme colors */
+    /* 
+    #a1c1a9 green
+    #c1d8eb light blue 
+    #ffb140 orange
+    #6200b3 purple
+    #00487c dark blue 
+    #f5f1e0 eggshell
+    #f0fff1 light green */
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1200px) {
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 400px;
+        }
+    }

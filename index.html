@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <title>Cory Hardman Coaching</title>
-<link rel="icon" type="image/x-icon" href="images/CH_coaching_logo_final_favicon_wBground.png">
+<link rel="icon" type="image/x-icon" href="images/CH_coaching_logo_final_dark512.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -11,117 +11,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://use.typekit.net/kzw5eyd.css">
-<style>
-    body{
-        font-family: sanvito-pro, sans-serif;
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-            font-family: 'Redressed', cursive;
-    }
-
-    body,
-    html {
-        height: 100%;
-        color: #777;
-        line-height: 1.5;
-        font-size: 20px;
-    }
-    p{    
-        font-size: 28px;
-    }
-
-    /* Create a Parallax Effect */
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3 {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    /* First image (Logo. Full height) */
-    .bgimg-1 {
-        background-image: url("images/lavender_background.jpg");
-        min-height: 100%;
-    }
-
-    /* Second image (Portfolio) */
-    .bgimg-2 {
-        background-image: url("images/lavender_background.jpg");
-        min-height: 400px;
-    }
-
-    /* Third image (Contact) */
-    .bgimg-3 {
-        background-image: url("images/lavender_background.jpg");
-        min-height: 400px;
-    }
-
-    .w3-wide {
-        letter-spacing: 10px;
-    }
-
-    .w3-hover-opacity {
-        cursor: pointer;
-    }
-    /* theme colors */
-    /* 
-    #a1c1a9 green
-    #c1d8eb light blue 
-    #ffb140 orange
-    #6200b3 purple
-    #00487c dark blue 
-    #f5f1e0 eggshell
-    #f0fff1 light green */
-
-    /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1200px) {
-
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
-            background-attachment: scroll;
-            min-height: 400px;
-        }
-    }
-</style>
+<link rel="stylesheet" href="styles.css">
 
 <body>
 
     <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-        <div class="w3-bar" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
-                href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                <i class="fa fa-bars"></i>
-            </a>
-            <a href="#home" class="w3-bar-item w3-button">HOME</a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-                <i class="fa fa-search"></i>
-            </a>
-        </div>
-
-        <!-- Navbar on small screens -->
-        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-            <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-        </div>
-    </div>
+    <header w3-include-html="header.html"></header>
 
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-        <div class="w3-display-middle" style="white-space:nowrap; background-color: white; opacity: 90%;border-radius: 25px;width: 50%;">
+        <div class="w3-display-middle"
+            style="white-space:nowrap; background-color: white; opacity: 90%;border-radius: 25px;width: 50%;">
             <div class="w3-center w3-padding-large w3-xlarge w3-wide">
                 <img src="images/CH_coaching_logo_branding@4x.png" class="w3-center w3-image" style="width: 100%;"
                     alt="CH_coaching_logo_branding">
@@ -129,246 +29,77 @@
         </div>
     </div>
 
-    <!-- Container (About Section) -->
+    <!-- Container (hero Coaching) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
-        <h3 class="w3-center">ABOUT ME</h3>
-        <p class="w3-center"><em>I love Coaching</em></p>
-        <p>"Stop being a victim of your circumstances! Empower yourself by choosing who you want to be and how you want to show up in life! Start living the life you wish you had and let me help you go from good to great!".</p>
-        <div class="w3-row">
+        <h3 class="w3-center">I love Coaching</h3>
+        <div class="w3-col m6 w3-right w3-padding-large">
+            <p>"Stop being a victim of your circumstances! Empower yourself by choosing who you want to be and how you
+                want
+                to show up in life! Start living the life you wish you had and let me help you go from good to great!".
+            </p>
+
+            <p>It is so easy to say, "I am frustrated!" But what does that even feel like or mean? Sometimes it is
+                just something we say out of habit, and not reality.
+                I would like to suggest that instead, you stop and tell yourself to take a deep breath and then
+                decide how you feel. It still might be frustrated, but often it is something different.
+                There is power in figuring out your emotions and naming them as you feel them.</p>
+        </div>
+
+        <div class="">
             <div class="w3-col m6 w3-center w3-padding-large">
                 <p><b><i class="fa fa-user w3-margin-right"></i>Cory Hardman</b></p><br>
-                <img src="images/IMG_1758.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off"
+                <img src="images/portraits/cory_hardman_portrait-6.jpg" class="w3-card w3-round w3-image"
                     alt="Photo of Me" width="500" height="333">
             </div>
-
-            <!-- Hide this text on small devices -->
-            <div class="w3-col m6 w3-hide-small w3-padding-large">
-                <p>It is so easy to say, "I am frustrated!" But what does that even feel like or mean? Sometimes it is just something we say out of habit, and not reality.
-I would like to suggest that instead, you stop and tell yourself to take a deep breath and then decide how you feel. It still might be frustrated, but often it is something different. 
-There is power in figuring out your emotions and naming them as you feel them.</p>
-            </div>
         </div>
-        <br><br><br>
     </div>
 
     <!-- Second Parallax Image with Portfolio Text -->
-    <div class="bgimg-2 w3-display-container w3-opacity-min">
-        <div class="w3-display-middle" style="background-color: white; opacity: 55%;padding: 20px; border-radius: 20px;">
-            <span class="w3-xxxlarge w3-hover-opacity-off w3-wide" style="color: #6200b3;">COACHING</span>
+    <div class="bgimg-2 w3-display-container w3-center w3-opacity-min">
+        <div class="w3-display-middle"
+            style="background-color: white; opacity: 55%;padding: 20px; border-radius: 20px;">
+            <span class="w3-xxxlarge w3-hover-opacity-off w3-wide" style="color: #6200b3;">COACHING EMPOWERS</span>
         </div>
     </div>
-        <!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT COACHING</h3>
-  <p class="w3-center w3-large">Coaching can do so many things, here are a few!</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Empower</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Joy</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Awareness</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-  </div>
-</div>
-        <!-- <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-        <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-        <div class="w3-light-grey">
-            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-        </div>
-        <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-        <div class="w3-light-grey">
-            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-        </div>
-        <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-        <div class="w3-light-grey">
-            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-        </div>
-    </div>
+    <!-- What is coaching Section -->
+    <div class="w3-content w3-container w3-padding-64">
+        <h3 class="w3-center">Empowerment</h3>
 
-    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">14+</span><br>
-            Partners
-        </div>
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">55+</span><br>
-            Projects Done
-        </div>
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">89+</span><br>
-            Happy Clients
-        </div>
-        <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">150+</span><br>
-            Meetings
-        </div>
-    </div> -->
+        <p>In coaching, we focus on the present and the future, instead of dwelling on the past.
+            We uncover any thoughts you are having, even the ones you weren't aware of, that cause you to feel and
+            act a certain way. When you recognize these thoughts, you can decide if those thoughts are serving you
+            or hurting you and if you want to keep them.
+            I create a safe space to sort through your thoughts and be aware of how your thoughts create your
+            feelings. I give you tools to help you take your life from good to great!
+            Want to give it a try?</p>
 
+        <div class="w3-center">
+            <div class="w3-padding-16 w3-row w3-margin">
+                <button class="button-hover button-hover-shadow w3-button w3-margin w3-padding-large w3-hover-opacity"
+                    style="background-color: #6200b3!important;"><a href="contact.html" class="w3-button button-hover"
+                        style="background-color: #6200b3!important;
+                        color:white;">WORK WITH ME</a></button>
 
-
-    <!-- Container (Portfolio Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
-        <h3 class="w3-center">MY WORK</h3>
-        <p class="w3-center"><em>In coaching, we focus on the present and the future, instead of dwelling on the past. We uncover any thoughts you are having, even the ones you weren't aware of, that cause you to feel and act a certain way. When you recognize these thoughts, you can decide if those thoughts are serving you or hurting you and if you want to keep them.
-I create a safe space to sort through your thoughts and be aware of how your thoughts create your feelings. I give you tools to help you take your life from good to great! 
-Want to give it a try?</em></p><br>
-
-        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width)
-        <div class="w3-row-padding w3-center">
-            <div class="w3-col m3">
-                <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="The mist over the mountains">
+                <button class="button-hover button-hover-shadow w3-button w3-margin w3-padding-large w3-hover-opacity"
+                    style="background-color: #6200b3!important;"><a href="about.html" class="w3-button button-hover"
+                        style="background-color: #6200b3!important;
+                        color:white;">LEARN MORE</a></button>
             </div>
-
-            <div class="w3-col m3">
-                <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Coffee beans">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Bear closeup">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Quiet ocean">
-            </div>
-        </div>
-
-        <div class="w3-row-padding w3-center w3-section">
-            <div class="w3-col m3">
-                <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="The mist">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="My beloved typewriter">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Empty ghost train">
-            </div>
-
-            <div class="w3-col m3">
-                <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
-                    alt="Sailing">
-            </div> -->
-        <div class="w3-center">   
-            <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px"><a href="#contact" class="w3-button">CONTACT</a></button>
-        </div>
-    </div>
-    
-
-    <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
-                class="fa fa-remove"></i></span>
-        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-            <img id="img01" class="w3-image">
-            <p id="caption" class="w3-opacity w3-large"></p>
         </div>
     </div>
 
     <!-- Third Parallax Image with Portfolio Text -->
-    <div class="bgimg-3 w3-display-container w3-opacity-min">
-        <div class="w3-display-middle" style="background-color: white; opacity: 60%;padding: 20px; border-radius: 20px;">
-            <span class="w3-xxxlarge w3-hover-opacity-off w3-wide" style="color: #6200b3;" >CONTACT</span>
+    <!-- <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxxlarge w3-hover-opacity-off w3-wide"></span>
         </div>
-    </div>
-
-    <!-- Container (Contact Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="contact">
-        <h3 class="w3-center">WHERE I WORK</h3>
-        <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-        <div class="w3-row w3-padding-32 w3-section">
-            <div class="w3-col m4 w3-container">
-                <a href="https://goo.gl/maps/Z2GVpd2rYc9iHxY67" title="Location" target="_blank"
-                class="w3-hover-opacity"><img src="images/static_map.php.png" class="w3-image w3-round" style="width:100%"></a>
-            </div>
-            <div class="w3-col m8 w3-panel">
-                <div class="w3-xlarge w3-margin-bottom">
-                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Syracuse Utah, US<br>
-                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (801) 513-3065<br>
-                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
-                    cory@coryhardmancoaching.com<br>
-                </div>
-                <!-- <form action="/action_page.php" target="_blank"> -->
-                    <form action="mailto:cory@coryhardmancoaching.com" method="post" enctype="text/plain">
-                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                        </div>
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-                        </div>
-                    </div>
-                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                    <button class="w3-button w3-black w3-right w3-section" type="submit">
-                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
+    </div> -->
 
     <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-        <div class="w3-xlarge w3-section">
-            <a href="https://www.facebook.com/coryhardmancoaching/" title="Cory Hardman Coaching Facebook" target="_blank" ><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-            <a href="https://www.instagram.com/coryhardmancoaching/" title="Cory Hardman Coaching Instagram" target="_blank" ><i class="fa fa-instagram w3-hover-opacity"></i></a>
-        </div>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-                class="w3-hover-text-green">w3.css</a></p>
+    <footer w3-include-html="footer.html">
     </footer>
 
-    <script>
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-
-        // Change style of navbar on scroll
-        window.onscroll = function () { myFunction() };
-        function myFunction() {
-            var navbar = document.getElementById("myNavbar");
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-            } else {
-                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-            }
-        }
-
-        // Used to toggle the menu on small screens when clicking on the menu button
-        function toggleFunction() {
-            var x = document.getElementById("navDemo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
+    <script type="module" src="module.js">
     </script>
 
 </body>
