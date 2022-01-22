@@ -10,6 +10,8 @@
     h5,
     h6 {
         font-family: 'Redressed', cursive;
+        font-size: 36px;
+        color: #6200b3;
     }
 
     body,
@@ -22,6 +24,8 @@
 
     p {
         font-size: 28px;
+        font-family: sanvito-pro,
+        sans-serif;
     }
     /* Top Nav */
     div.w3-top{
@@ -32,7 +36,8 @@
     .bgimg-1,
     .bgimg-2,
     .bgimg-3,
-    .about-bgimg {
+    .about-bgimg,
+    .learnmore-bgimg {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -59,7 +64,13 @@
 
     .about-bgimg {
         background-image: url("images/backgrounds/hand\ holding\ lavendar.jpg");
-        min-height: 100%;
+        min-height: 80%;
+        max-height: 400px;
+    }
+
+    .learnmore-bgimg {
+        background-image: url("images/backgrounds/light\ strands\ of\ lavendar.jpg");
+        min-height: 80%;
         max-height: 400px;
     }
 
@@ -96,7 +107,8 @@
         .bgimg-1,
         .bgimg-2,
         .bgimg-3,
-        .about-bgimg {
+        .about-bgimg,
+        .learnmore-bgimg {
             background-attachment: scroll;
             min-height: 400px;
         }

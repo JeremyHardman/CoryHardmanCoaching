@@ -33,18 +33,19 @@
     <div class="w3-content w3-container w3-padding-64" id="about">
         <h3 class="w3-center">I help mom's of teens gain confidence in their parenting skills</h3>
         <div class="w3-col w3-padding-large">
-            <p>Stop being a victim of your circumstances! Empower yourself by choosing who you want to be and how you
-                want
-                to show up as a mother! Start living the life you wish you had and let me help your relationship with your teen go from good to great!.
-            </p>
-
             <p>Life coach for LDS moms of teens who feel like they are failing as a parent, feel guilty and who are
                 worried about messing up their children. I help you feel peace, acceptance, and love for yourself and
                 your children, regardless of their actions. I teach you tools to gain confidence in your parenting
-                skills and the decisions you make. It's time to stop blaming yourself!</p>
+                skills and the decisions you make.</p>
+
+            <p>Stop being a victim of your circumstances! Empower yourself by choosing who you want to be and how you
+                want to show up as a mother! Start living the life you wish you had and let me help your relationship
+                with
+                your teen go from good to great!
+            </p>
         </div>
 
-       
+
     </div>
 
     <!-- Second Parallax Image with Portfolio Text -->
@@ -57,23 +58,22 @@
     <!-- What is coaching Section -->
     <div class="w3-content w3-container w3-padding-64">
         <h3 class="w3-center">Empowerment</h3>
- <div class="w3-col m6 w3-right w3-padding-large">
-        <p>In coaching, we focus on the present and the future, instead of dwelling on the past.
-            We uncover any thoughts you are having, even the ones you weren't aware of, that cause you to feel and
-            act a certain way. When you recognize these thoughts, you can decide if those thoughts are serving you
-            or hurting you and if you want to keep them.
-            I create a safe space to sort through your thoughts and be aware of how your thoughts create your
-            feelings. I give you tools to help you take your life from good to great!
-            Want to give it a try?</p>
+        <div class="w3-col m6 w3-right w3-padding-large">
+            <p>In coaching, we focus on the present and the future, instead of dwelling on the past.
+                We uncover any thoughts you are having, even the ones you weren't aware of, that cause you to feel and
+                act a certain way. When you recognize these thoughts, you can decide if those thoughts are serving you
+                or hurting you and if you want to keep them.
+                I create a safe space to sort through your thoughts and be aware of how your thoughts create your
+                feelings. I give you tools to help you take your life from good to great!
+                Want to give it a try?</p>
+        </div>
+        <div class="">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <img src="images/portraits/cory_hardman_portrait-6.jpg" class="w3-card w3-round w3-image"
+                    alt="Photo of Me" width="500" height="333">
             </div>
- <div class="">
-     <div class="w3-col m6 w3-center w3-padding-large">
-         <p><b><i class="fa fa-user w3-margin-right"></i>Cory Hardman</b></p><br>
-         <img src="images/portraits/cory_hardman_portrait-6.jpg" class="w3-card w3-round w3-image" alt="Photo of Me"
-             width="500" height="333">
-     </div>
-     
- </div>
+
+        </div>
         <div class="w3-center">
             <div class="w3-padding-16 w3-row w3-margin">
                 <button class="button-hover button-hover-shadow w3-button w3-margin w3-padding-large w3-hover-opacity"
@@ -102,34 +102,37 @@
     <script type="module" src="module.js">
     </script>
     <script>
-     // Modal Image Gallery
-     function onClick(element) {
-     document.getElementById("img01").src = element.src;
-     document.getElementById("modal01").style.display = "block";
-     var captionText = document.getElementById("caption");
-     captionText.innerHTML = element.alt;
-     }
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
 
-     // Change style of navbar on scroll
-     window.onscroll = function() {myFunction()};
-     function myFunction() {
-     var navbar = document.getElementById("myNavbar");
-     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-     navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-     } else {
-     navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-     }
-     }
+        // Change style of navbar on scroll
+        window.onscroll = function () {
+            myFunction()
+        };
 
-     // Used to toggle the menu on small screens when clicking on the menu button
-     function toggleFunction() {
-     var x = document.getElementById("navDemo");
-     if (x.className.indexOf("w3-show") == -1) {
-     x.className += " w3-show";
-     } else {
-     x.className = x.className.replace(" w3-show", "");
-     }
-     }
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
     </script>
 
 </body>
