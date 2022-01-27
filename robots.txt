@@ -1,0 +1,9 @@
+User-agent: Mediapartners-Google 
+Disallow:
+
+User-agent: *
+Disallow: /src/images
+Disallow: *.htm
+Disallow: *.aspx$
+Disallow: *.php$
+Disallow: /digital.vcard
