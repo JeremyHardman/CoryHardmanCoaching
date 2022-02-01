@@ -7,3 +7,4 @@ Disallow: *.htm
 Disallow: *.aspx$
 Disallow: *.php$
 Disallow: /digital.vcard
+sitemap: https://coryhardmancoaching.com/sitemap.xml
