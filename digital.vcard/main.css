@@ -30,24 +30,25 @@ img {
   height: auto;
   width: auto;
   object-fit: contain;
+  color: #6200b3;
 }
 .side-logo > img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-height: 50%;
-  max-width: 50%;
+  max-height: 75%;
+  max-width: 75%;
   height: auto;
   width: auto;
   object-fit: contain;
 }
 
 .logo-small {
-  color: rgba(3, 52, 104, 1);
+  color: #6200b3;
 }
 img.profile-pic {
-  height: 30%;
-  width: 30%;
+  height:100%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -147,33 +148,36 @@ img.profile-pic {
 }
 
 .bg-color-grey {
-  background: rgba(3, 52, 104, 1);
+  background: #6200b3;
 }
 
 .bg-color-white {
   height: 100%;
   /*background-color: black;*/
-  background-color: rgb(199, 208, 207);
+  background-color: #ffffff;
 }
 
 .text-name {
-  font-family: 'Arima Madurai', cursive;
+  font-family: 'Redressed',
+  cursive;
   font-weight: 400;
-  color: rgba(3, 52, 104, 1);
+  color: #6200b3;
   font-size: 24px;
 }
 
 .text-title-company {
-  font-family: 'Arima Madurai', cursive;
+  font-family: 'Redressed',
+  cursive;
   font-weight: 600;
-  color: rgba(3, 52, 104, 1);
+  color: #6200b3;
   font-size: 16px;
 }
 
 .text-detail {
-  font-family: 'Lato', sans-serif;
+  font-family: sanvito-pro,
+  sans-serif;
   font-weight: 300;
-  color: rgba(3, 52, 104, 1);
+  color: #ffb140;
   font-size: 16px;
 }
 
@@ -182,7 +186,7 @@ img.profile-pic {
 }
 
 .button {
-  background-color: rgba(3, 52, 104, 1);
+  background-color: #6200b3;
   height: 48px;
   /* padding-left: 24px;
   padding-right: 24px; */
@@ -196,14 +200,22 @@ img.profile-pic {
 
 @media screen and (max-width: 600px) {
   img.profile-pic {
-    height: 60%;
-    width: 60%;
+    height: 100%;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 480px) {
   img.profile-pic {
-    height: 60%;
-    width: 60%;
+    height: 100%;
+    width: 100%;
   }
 }
+ @font-face {
+   font-family: 'Redressed';
+   font-style: normal;
+   font-weight: 400;
+   font-display: swap;
+   src: url(https://fonts.gstatic.com/s/redressed/v23/x3dickHUbrmJ7wMy9Msxe_oDnSzlBQ.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+ }
