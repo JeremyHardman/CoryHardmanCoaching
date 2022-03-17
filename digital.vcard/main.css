@@ -148,7 +148,7 @@ img.profile-pic {
 }
 
 .bg-color-grey {
-  background: #6200b3;
+  background: #c1d8eb;
 }
 
 .bg-color-white {
@@ -177,8 +177,8 @@ img.profile-pic {
   font-family: sanvito-pro,
   sans-serif;
   font-weight: 300;
-  color: #ffb140;
-  font-size: 16px;
+  color: #00487c;
+  font-size: 20px;
 }
 
 .bottom {
@@ -196,6 +196,7 @@ img.profile-pic {
   font-family: 'Lato', sans-serif;
   color: rgb(199, 208, 207);
   font-weight: 300;
+  box-shadow: 5px 5px 10px #1600287a;
 }
 
 @media screen and (max-width: 600px) {
