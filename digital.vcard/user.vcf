@@ -3,12 +3,12 @@ VERSION:3.0
 PRODID:-//Apple Inc.//iPhone OS 11.2.2//EN
 N:Hardman, Cory;;;
 FN: Cory Hardman 
-ORG:Focused Connections;
-TITLE:Owner Focused Connections
-EMAIL;type=INTERNET;type=WORK;type=pref:cory@focusedconnections.net
+ORG:Cory Hardman Coaching;
+TITLE:Certified Life Coach
+EMAIL;type=INTERNET;type=WORK;type=pref:cory@coryhardmancoaching.com
 TEL;type=WORK;type=VOICE:8015133065
 item1.ADR;type=WORK;type=pref:;;\nSyracuse, Utah\,;;;84075;United States
 item1.X-ABADR:sg
-item2.URL;type=pref:focusedconnections.net
+item2.URL;type=pref:coryhardmancoaching.com
 item2.X-ABLabel:_$!<HomePage>!$_
 END:VCARD
